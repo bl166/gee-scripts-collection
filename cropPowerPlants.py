@@ -11,7 +11,6 @@ Jul 26, 2017
 
 # Import the Earth Engine Python Package
 import ee
-import csv
 from xlrd import open_workbook
 
 ee.Initialize();
@@ -82,7 +81,7 @@ def download_ppt_pic(id_start,id_end,option):
 
 
 if __name__ == '__main__':
-	id_start,id_end = (1101,1120)
+	id_start,id_end = (300,500)
 	download_ppt_pic(id_start,id_end,'naip')
-	# download_ppt_pic(id_start,id_end,'ls8')
+	download_ppt_pic(id_start,id_end,'ls8')
 
